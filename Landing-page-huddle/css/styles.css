@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;1,600&display=swap');
+:root{
+    /* Colors */
+    --Primary: hsl(257, 40%, 49%);
+    --Secondary: #FFFFFF;
+
+    /* Fonts */
+    --Headings: 'Open Sans', sans-serif;
+    --Body: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--Primary);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+header{
+    width: 300px;
+    margin: 0 auto;
+}
+header img{
+    padding-top: 30px;
+    width: 150px;
+}
+
+.main-info-container{
+    width: 375px;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+.main-info-container div{
+    margin: 0 auto;
+}
+.main-info-container img{
+    padding-top: 60px;
+    width: 300px;
+    
+}
+.main-info-container .info--content{
+    width: 330px;
+    text-align: center;
+    color: var(--Secondary);
+}
+.main-info-container h2{
+    font-family: var(--Headings);
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.main-info-container p{
+    font-family: var(--Body);
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.main-info-container button{
+    width: 220px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.65);
+    font-family: var(--Body);
+    font-weight: 400;
+    color: var(--Primary); 
+}
+
+
+.main-social-container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-social-container i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--Secondary);
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 10px;
+
+    color: var(--Secondary);
+    font-size: 20px;
+}
