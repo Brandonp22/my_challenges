@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/desktop.css" media="(min-width: 1600px)">
 </head>
 <body>
     <header>
-        <h2>Rick and Morty</h2>
+        <div class="header-img">
+            <img src="https://media.cdn.adultswim.com/uploads/20210428/21428161947-rick-and-morty-logo-png.png" alt="Rick and Morty">
+        </div>
+        <div class="header-video">
+            <video src="video.mp4" muted loop autoplay></video>
+
+        </div>
     </header>
 
     <main>
-        <section id="cards-container"></section>
-
-
-
-
-
-
-
+        <section id="cards-container" class="main-cards-content"></section>
     </main>
 
     <script src="./src/utils/dataFetch.js"></script>
     <script src="./src/utils/cardConstructor.js"></script>
     <script src="./src/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/68653dd7fe.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
